@@ -16,8 +16,9 @@ const char* Winner(const char player1[], const char player2[]) {
         (strcmp(player1, "paper") == 0 && strcmp(player2, "rock") == 0)) {
         return "Player1";
     }
-    
-   
+    else if ((strcmp(player1, player2) == 0)) {
+        return "Draw";
+    }
     else {
         return "Player2";
     }
